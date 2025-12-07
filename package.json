@@ -1,14 +1,17 @@
 {
   "name": "google-cloud-function-access",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ncc build index.js -o dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stikkyapp/google-cloud-function-access.git"
+  },
+  "engines": {
+    "node": "20"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +22,7 @@
   "homepage": "https://github.com/stikkyapp/google-cloud-function-access#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@actions/github": "^5.1.1",
+    "@actions/github": "^6.0.0",
     "jsonwebtoken": "^9.0.0",
     "node-fetch": "^2.6.9"
   }
